@@ -3,7 +3,7 @@ const http = require('http')
 const socketio = require('socket.io')
 const router = require('./router')
 const cors=require('cors')
-const Port = process.env.Port || 3001
+const Port = process.env.PORT|| 3001
 const { addUser, removeUser, getUser, getUserInRoom } = require('./user.js')
 
 
