@@ -19,7 +19,7 @@ server.listen(Port, () => {
 
 const io = socketio(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://jolly-darwin-86802f.netlify.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
