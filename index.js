@@ -19,7 +19,7 @@ server.listen(Port, () => {
 
 const io = socketio(server, {
   cors: {
-    origin: "https://jolly-darwin-86802f.netlify.app",
+    origin: "https://rahul-chatbot-reactjs.netlify.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
