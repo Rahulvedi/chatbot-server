@@ -4,6 +4,7 @@ const socketio = require('socket.io')
 const router = require('./router')
 const cors=require('cors')
 const Port = process.env.PORT|| 3001
+const origin=process.env.ORIGIN  || 'localhost:3000'
 const { addUser, removeUser, getUser, getUserInRoom } = require('./user.js')
 
 
@@ -19,7 +20,7 @@ server.listen(Port, () => {
 
 const io = socketio(server, {
   cors: {
-    origin: "https://rahul-chatbot-reactjs.netlify.app",
+    origin: ORIGIN,
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
