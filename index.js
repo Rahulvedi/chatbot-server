@@ -20,7 +20,7 @@ server.listen(Port, () => {
 
 const io = socketio(server, {
   cors: {
-    origin: ORIGIN,
+    origin: origin,
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
