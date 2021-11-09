@@ -4,7 +4,7 @@ const socketio = require('socket.io')
 const router = require('./router')
 const cors=require('cors')
 const Port = process.env.PORT|| 3001
-const origin='https://rahul-chatbot-reactjs.netlify.app/';
+const origin='https://rahul-chatbot-reactjs.netlify.app';
 const { addUser, removeUser, getUser, getUserInRoom } = require('./user.js')
 
 
